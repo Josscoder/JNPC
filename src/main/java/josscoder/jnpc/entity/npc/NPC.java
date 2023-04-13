@@ -114,13 +114,6 @@ public class NPC extends Spawnable {
         }
     }
 
-    public void showToWorldPlayers() {
-        Location location = attributeSettings.getLocation();
-        if (location.isValid()) {
-            location.getLevel().getPlayers().values().forEach(this::show);
-        }
-    }
-
     @Override
     public void show(Player player) {
         super.show(player);
